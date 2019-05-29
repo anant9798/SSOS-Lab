@@ -66,8 +66,9 @@
 
 	#include <stdio.h>
 	#include <stdlib.h>
+	int n =0;
 
-#line 71 "y.tab.c" /* yacc.c:339  */
+#line 72 "y.tab.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -126,7 +127,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 130 "y.tab.c" /* yacc.c:358  */
+#line 131 "y.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -423,7 +424,7 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,     7,     7,     8,     8
+       0,     8,     8,     9,     9
 };
 #endif
 
@@ -1188,13 +1189,13 @@ yyreduce:
   switch (yyn)
     {
         case 4:
-#line 8 "2.y" /* yacc.c:1646  */
+#line 9 "2.y" /* yacc.c:1646  */
     {;}
-#line 1194 "y.tab.c" /* yacc.c:1646  */
+#line 1195 "y.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1198 "y.tab.c" /* yacc.c:1646  */
+#line 1199 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1422,9 +1423,11 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 9 "2.y" /* yacc.c:1906  */
+#line 10 "2.y" /* yacc.c:1906  */
 
 main() {
+	printf("Enter n value: \n");
+	scanf("%d", &n);
 	printf("Enter exp: ");
 	yyparse();
 	printf("Valid exp\n");

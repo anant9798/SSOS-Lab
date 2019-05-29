@@ -16,11 +16,11 @@ exp:NUM	{$$=$1;}
 %%
 int yyerror()
 {
- printf("Error!!");
- exit(0);
+  printf("Error!!\n");
+  exit(0);
 }
 int main()
 {
- printf("EXP\n");
- yyparse();
+  printf("EXP\n");
+  yyparse();
 } 	

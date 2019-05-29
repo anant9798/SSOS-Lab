@@ -18,15 +18,13 @@ input:	ID input	{i++;}
 extern int yylex();
 extern FILE* yyin;
 void main(int argc, char ** argv)
- {
-  yyin = fopen(argv[1],"r");
-  yyparse();
-  printf("\nIdentifiers: %d \nKey words: %d \nOperators: %d\nDIG: %d\n",i,k,op,dig);
- }
- int yyerror()
- {
-  printf("ERRROOORRR");
-  exit(0);
- } 
-  
- 
+{
+    yyin = fopen(argv[1],"r");
+    yyparse();
+    printf("\nIdentifiers: %d \nKey words: %d \nOperators: %d\nDIG: %d\n",i,k,op,dig);
+}
+int yyerror()
+{
+    printf("ERRROOORRR");
+    exit(0);
+} 
